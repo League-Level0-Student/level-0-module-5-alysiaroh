@@ -1,3 +1,4 @@
+import javax.swing.JOptionPane;
 
 public class ForLoopGauntlet {
 	// Write a for loop to do each the following:
@@ -39,7 +40,14 @@ public class ForLoopGauntlet {
 		// 3 is odd
 		// 4 is even
 		// 5 is odd...etc.
-
+		String hihi = JOptionPane.showInputDialog("Choose a number.");
+		int input = Integer.parseInt(hihi);
+		if(input%2==0) {
+			JOptionPane.showMessageDialog(null, ""+ input + " is even.");
+		}
+		else {
+			JOptionPane.showMessageDialog(null, ""+ input + " is odd.");
+		}
 		// 6. Display all multiples of 7 from 0 to 777.
 		for (int e = 7; e < 778; e++) {
 			if (e % 7 == 0) {
@@ -55,5 +63,10 @@ public class ForLoopGauntlet {
 			System.out.println("In " + y + " I was " + yO + " years old.");
 			yO++;
 		}
+	}
+
+	private static void showInputDialog(String string) {
+		// TODO Auto-generated method stub
+		
 	}
 }
